@@ -32,7 +32,7 @@ import freemarker.template.TemplateModelException;
  * @version 1.0,2014年4月28日 <br/>
  * 
  */
-@SuppressWarnings("unchecked")
+@SuppressWarnings("rawtypes")
 public abstract class WYFTemplateModel implements TemplateDirectiveModel{
 
 	

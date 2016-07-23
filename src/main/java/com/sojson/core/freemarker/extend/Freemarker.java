@@ -49,13 +49,13 @@ import freemarker.template.TemplateModelException;
  * 
  */
 @SuppressWarnings({  "unchecked"})
-public class Ferrmarker {
+public class Freemarker {
 	//HTML输出目录
 	protected static String HTML_PATH = UtilPath.getHTMLPath();
 	//FTL输入目录
 	protected static String FTL_PATH = UtilPath.getFTLPath();
 	private static Configuration cfg = null;
-	private static Log logger = LogFactory.getLog(Ferrmarker.class);
+	private static Log logger = LogFactory.getLog(Freemarker.class);
 	
 	
 	static Map<String,Object> initMap;

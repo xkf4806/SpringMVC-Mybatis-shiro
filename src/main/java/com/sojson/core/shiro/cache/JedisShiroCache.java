@@ -46,6 +46,7 @@ public class JedisShiroCache<K, V> implements Cache<K, V> {
     private String name;
 
     
+	@SuppressWarnings("rawtypes")
 	static final Class<JedisShiroCache> SELF = JedisShiroCache.class;
     public JedisShiroCache(String name, JedisManager jedisManager) {
         this.name = name;

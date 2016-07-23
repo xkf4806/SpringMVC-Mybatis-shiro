@@ -22,7 +22,7 @@ import com.sojson.common.utils.StringUtils;
  * @version 1.0,2016年6月2日 <br/>
  * 
  */
-@SuppressWarnings("unchecked")
+@SuppressWarnings("rawtypes")
 public abstract class SuperCustomTag {
 	
 	/**
@@ -30,6 +30,7 @@ public abstract class SuperCustomTag {
 	 * @param params
 	 * @return
 	 */
+	
 	protected abstract Object result(Map params);
 	
 	

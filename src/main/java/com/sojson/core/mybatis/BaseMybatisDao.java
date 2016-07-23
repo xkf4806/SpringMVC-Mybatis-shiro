@@ -21,7 +21,7 @@ import com.sojson.common.utils.StringUtils;
 import com.sojson.core.mybatis.page.MysqlDialect;
 import com.sojson.core.mybatis.page.Pagination;
 
-@SuppressWarnings( { "unchecked" })
+@SuppressWarnings( { "unchecked", "rawtypes"})
 public class BaseMybatisDao<T> extends SqlSessionDaoSupport {
 
 	private String NAMESPACE;
@@ -52,6 +52,7 @@ public class BaseMybatisDao<T> extends SqlSessionDaoSupport {
 	 * @param pageSize		size
 	 * @return
 	 */
+	
 	public Pagination findByPageBySqlId(String sqlId,
 			Map<String, Object> params, Integer pageNo, Integer pageSize) {
 

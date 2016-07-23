@@ -32,7 +32,7 @@ public class Pagination<T> extends SimplePage implements java.io.Serializable,
 		super(pageNo, pageSize, totalCount);
 	}
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public Pagination(int pageNo, int pageSize, int totalCount, List list) {
 		super(pageNo, pageSize, totalCount);
 		this.list = list;
